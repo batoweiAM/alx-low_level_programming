@@ -2,31 +2,23 @@
 /**
  *print_sign - print the sign of a number.
  *@n: Number to be checked.
- *Return: Always 0.
+ *Return: 1-if n is greater than 0: 0-if n equals 0: 1-if  is less than 0.
 */
 int print_sign(int n)
 {
-	int n;
-
-	n = print_sign(98);
-	 _putchar(',');
-	 _putchar(' ');
-	 _putchar(n + '0');
-	 _putchar('\n');
-	 n = print_sign(0);
-	 _putchar(',');
-	 _putchar(' ');
-	 _putchar(n + '0');
-	 _putchar('\n');
-	 n = print_sign(0xff);
-	 _putchar(',');
-	 _putchar(' ');
-	 _putchar(n + '0');
-	 _putchar('\n');
-	 n = print_sign(-1);
-	 _putchar(',');
-	 _putchar(' ');
-	 _putchar(n + '0');
-	 _putchar('\n');
-	 return (0);
+       if (n > 0)
+       {
+	       _putchar('+');
+	       return (1);
+       }
+       else if (n < 0)
+       {
+	       _putchar('-');
+	       return (-1);
+       }
+       else
+       {
+	       _putchar('0');
+	       return (0);
+       }
 }
