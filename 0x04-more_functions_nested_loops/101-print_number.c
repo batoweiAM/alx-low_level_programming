@@ -13,8 +13,12 @@ void print_number(int n)
 		_putchar(45);
 		m = n * -1;
 	}
+	else
+	{
+		m = n;
+	}
 	d = m
-		count = 1;
+	count = 1;
 
 	while (d > 9)
 	{
