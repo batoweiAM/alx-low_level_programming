@@ -6,7 +6,7 @@
  */
 char *rot13(char *s)
 {
-	ini, j;
+	int i, j;
 
 	char *x = "abcdefghijklmnopqrstuvwxyzABCDEFGHIKJLMNOPQRSTUVWXYZ";
 	char *y = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
